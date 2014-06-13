@@ -24,7 +24,7 @@ type trieGeocoder struct {
 	data *gotrie.Trie
 }
 
-// Country tries to identify the country for a phone number
+// Country tries to identify the country for a phone number - assuming it is provided in i18n format (+nn)
 func (g *trieGeocoder) Country(number string) (cc string, err error) {
 	number = strings.TrimPrefix(number, "+")
 
