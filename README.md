@@ -29,3 +29,4 @@ cc, err := phonegeocode.New().Country("+447999111222")
 // cc = "", err = phonegeocode.ErrCountryNotFound
 cc, err := phonegeocode.New().Country("+999999999998")
 ```
+
