@@ -1,4 +1,4 @@
-# Phone Prefix
+# Phone Geocode
 
 Internationalised phone number geocoding by country for Go.
 
