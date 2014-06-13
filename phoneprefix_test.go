@@ -31,3 +31,21 @@ func TestThingsThatAreFound(t *testing.T) {
 		}
 	}
 }
+
+func TestThingsThatAreNotFound(t *testing.T) {
+	cases := []struct {
+		number string
+	}{
+		{"+9915155235325"},
+		{"+898235265"},
+	}
+
+	p := New()
+
+	for _, tc := range cases {
+		_, err := p.Country(tc.number)
+		if err == nil {
+			t.Errorf("Expecting number '%s' to yield an error", tc.number)
+		}
+	}
+}
