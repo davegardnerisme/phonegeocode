@@ -1,5 +1,7 @@
 # Phone Geocode
 
+[![Build Status](https://travis-ci.org/davegardnerisme/phonegeocode.svg?branch=master)](https://travis-ci.org/davegardnerisme/phonegeocode)
+
 Internationalised phone number geocoding by country for Go.
 
 I built this because I needed to turn phone numbers into countries, and that's
